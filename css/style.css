@@ -27,6 +27,21 @@ select {
   appearance: none;
 }
 /* -------------------- reset styles -------------------- */
+.clients__item1__link,
+.clients__item2__link,
+.clients__item3__link {
+  display: none;
+}
+
+.clients__item1__profession,
+.clients__item2__profession,
+.clients__item3__profession {
+  display: none;
+}
+
+.branches__booking-form__content__message {
+  display: none;
+}
 
 .booking-contact-us {
   display: none;
@@ -667,6 +682,7 @@ a:hover {
 }
 
 .about__title-subtitle {
+  /*262*/
   margin-top: 309px;
   margin-bottom: 96px;
 }
@@ -783,7 +799,7 @@ a:hover {
 
 .pricing-content {
   max-width: 1050px;
-  /* height: 706px; */
+  max-height: 705px;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -898,8 +914,8 @@ a:hover {
 .pricing-content__item1__price__currency {
   height: 35px;
   position: relative;
-  top: 0px;
-  left: 0px;
+  /* top: 0px; */
+  /* left: 0px; */
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -913,8 +929,8 @@ a:hover {
 .pricing-content__item2__price__currency {
   height: 35px;
   position: relative;
-  top: 0px;
-  left: 0px;
+  /* top: 0px; */
+  /* left: 0px; */
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -928,8 +944,8 @@ a:hover {
 .pricing-content__item3__price__currency {
   height: 35px;
   position: relative;
-  top: 0px;
-  left: 0px;
+  /* top: 0px; */
+  /* left: 0px; */
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -1722,22 +1738,46 @@ a:hover {
     margin-bottom: 30px;
   }
 
-  .clients-item1__text,
+  .clients-item1__text {
+    margin-bottom: 22px;
+  }
+
   .clients-item2__text {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+  }
+
+  .clients-item3__text {
+    margin-bottom: 22px;
   }
 
   .clients-item1__stars,
   .clients-item2__stars,
   .clients-item3__stars {
     margin-bottom: 18px;
+    width: 139px;
   }
 
   .clients__item1__link {
     margin-bottom: 16px;
   }
 
+  .clients__item2__link {
+    margin-bottom: 16px;
+  }
+
+  .clients__item3__link {
+    margin-bottom: 16px;
+  }
+
   .clients__item1__profession {
+    margin-bottom: 39px;
+  }
+
+  .clients__item2__profession {
+    margin-bottom: 39px;
+  }
+
+  .clients__item3__profession {
     margin-bottom: 39px;
   }
   /* //---------- clients ----------// */
@@ -1791,6 +1831,8 @@ a:hover {
 
   .pricing-content {
     flex-direction: column;
+    height: max-content;
+    max-height: unset;
   }
 
   .pricing-content__item1,
@@ -1806,6 +1848,7 @@ a:hover {
 
   .pricing-content__item2 {
     margin-bottom: 30px;
+    height: 725px;
   }
 
   .pricing-content__item2__title {
@@ -1818,15 +1861,17 @@ a:hover {
   /* //---------- pricing ----------// */
 
   /* //---------- branches ----------// */
+
+  .branches__booking-form__content__message {
+    display: block;
+  }
+
   .branches__content {
     flex-direction: column;
   }
 
   .map-mobile {
     display: block;
-  }
-
-  .branches__container {
   }
 
   .branches__content {
@@ -1985,4 +2030,16 @@ a:hover {
     margin-top: -11px;
   }
   /* //---------- footer ----------// */
+
+  .clients__item1__link,
+  .clients__item2__link,
+  .clients__item3__link {
+    display: block;
+  }
+
+  .clients__item1__profession,
+  .clients__item2__profession,
+  .clients__item3__profession {
+    display: block;
+  }
 }
