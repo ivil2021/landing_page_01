@@ -101,7 +101,7 @@ select {
 
 .header {
   max-width: 100%;
-  background-image: url('/img/header_background.png');
+  background-image: url('../img/header_background.png');
   background-size: cover;
   color: #ffffff;
 }
@@ -1162,8 +1162,7 @@ a:hover {
 }
 
 .foto-book-appointment {
-  padding-top: 231px;
-  height: 610px;
+  height: max-content;
   z-index: 10;
 }
 
@@ -1177,25 +1176,27 @@ a:hover {
   width: 610px;
   height: 610px;
   background-color: #ffffff;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: column; */
   margin-right: 2px;
 }
 
 .branches__booking-form__title {
-  margin-bottom: 29px;
+  text-align: center;
+  padding: 40px 0;
+  /* margin-bottom: 29px;
   margin-top: -11px;
-  margin-left: 7px;
+  margin-left: 7px; */
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.5px;
   color: #252b42;
-  position: relative;
+  /* position: relative;
   top: 1px;
-  left: 132px;
+  left: 132px; */
 }
 
 .branches__booking-form__content {
@@ -1875,6 +1876,13 @@ a:hover {
   }
 
   .branches__content {
+    /* display: none; */
+    width: 100%;
+    height: 332px;
+        background-image: url('../img/map_mobile.png'); 
+  }
+
+  .branches__content * {
     display: none;
   }
 
@@ -1917,7 +1925,7 @@ a:hover {
   .branches {
     width: 100%;
     background-color: unset;
-    background-image: url('/img/map_mobile.png');
+    /* background-image: url('../img/map_mobile.png'); */
     width: 414px;
     margin: 0 auto;
   }
@@ -1933,7 +1941,6 @@ a:hover {
     line-height: 24px;
     letter-spacing: -0.1px;
     color: #252b42;
-    margin-top: 188px;
     margin-left: 11px;
     margin-bottom: 5px;
     margin-bottom: -2px;
